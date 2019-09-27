@@ -23,14 +23,15 @@ body{
    max-width: 960px;
    margin-left: auto;
    margin-right: auto;
-   max-height: 100%;
 }
 header, ul, nav, li, a{
+   /* sets the box size for all the above elements */
    box-sizing: border-box;
 }
 
 /* Row Styles */
 .row::after{
+   /* now it won't be collapsed */
    clear: both;
    content: "";
    display: table;
@@ -38,17 +39,21 @@ header, ul, nav, li, a{
 
 /* Page Header Styles */
 body>header>img{
+   /* sets the size for the large image at the 
+   top of the page */
    display: block;
    width: 70%;
    float: left;
 }
 body>header>nav{
+   /* positions the top nav bar */
    float: left;
    padding-right: 2%;
    padding-left: 2%;
    width: 30%
 }
 header a{
+   /* puts the nav options into nice boxes */
    display: block;
    width: 100%;
 }
@@ -69,6 +74,8 @@ nav.horizontal li{
    margin-right: 1.5%;
 }
 #topics li:first-of-type{
+   /* only the first li of each topic will be 
+   affected */
    margin-left: 7.75%;
 }
 #topics li:last-of-type{
@@ -88,6 +95,7 @@ hr{
 
 /* Customer Comment Styles */
 ul#comments{
+   /* posigionts the comments */
    width: 75%;
    margin-top: 40px;
    margin-bottom: 40px;
@@ -101,6 +109,7 @@ ul#comments li{
    margin-bottom: 30px;
 }
 ul#comments img{
+   /* affects the students image */
    display: block;
    width: 20%;
    float: left;
@@ -114,6 +123,8 @@ ul#comments p{
 
 /* Footer Styles */
 footer{
+   /* only displays the footer once both
+   margins are cleared */
    clear: both;
 }
 
